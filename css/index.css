@@ -1,1 +1,473 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html{
+    font-size: 62.5%;
+}
+.main-container {
+    width: 90%;
+    margin:2% auto;
+}
+
+header {
+    width: 100%;
+    z-index: +1;
+    margin-bottom: 20px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: +1;
+    margin-bottom: 10px;
+    width:98%;
+}
+
+.logo {
+    display: flex;
+    z-index: +1;
+    margin-left: 10px;
+}
+
+.parent nav a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.parent nav a:hover {
+    color: black;
+}
+
+/* .topnav { */
+    /* color: lightgray; */
+    /* height: 25px; */
+    /* width: 100%; */
+    /* align-items: space-between; */
+/* } */
+
+nav {
+    height: 25px;
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.facecon {
+    display: flex;
+    width: 98%;
+    height: 384px;
+    justify-content: space-around;
+    margin-top:10%;
+}
+
+button {
+    font-size: 1.8rem;
+    display: inline-block;
+    border: black solid 1px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 33px;
+    width: 171px;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+button:active {
+    color: lightgrey;
+}
+
+.facecon h1 {
+    /* display: flex; */
+    font-size: 7.6rem;
+    text-align: center;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 15px;
+    margin: 0 auto;
+}
+.headimg{
+    width:95%;
+    max-height:400px;
+    max-width:51.8%;
+}
+
+.topCon {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    border-top: 2px solid black;
+    margin-top: 85px;
+}
+
+#features,
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /* height: 150px; */
+    margin-bottom: 25px;
+}
+
+#features h3,
+#about h3 {
+    margin-top: 25px;
+}
+
+#features {
+    /* margin-left: 20px; */
+}
+
+#about {
+    /* margin-left: 40px; */
+}
+
+.lowercon {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    font-size: 1.6rem;
+}
+
+#services,
+#product,
+#vision {
+    width: 30%;
+    /* height: 100px; */
+    justify-content: flex-start;
+    padding-bottom: 8%;
+}
+
+#services {
+    right: 23px;
+}
+
+#vision {
+    left: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    top: 25px;
+    font-size:1.6rem;
+}
+
+address h2 {
+    margin-top: 15px;
+}
+
+.addy {
+    align-self: flex-start;
+    font-weight: 100;
+    line-height:1.2;
+}
+
+footer h5 {
+    align-self: center;
+}
+
+
+
+.imgidea img {
+    height: 250px;
+    width: 400px;
+}
+
+body h5 {
+    text-align: center;
+    font-size:1.6rem;
+}
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* tablet view */
+
+@media ( max-width: 800px) {
+    .main-container {
+        width: 98%;
+    }
+    header .parent {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .parent .logo {
+        align-content: center;
+        padding-bottom: 7%;
+    }
+    .parent nav {
+        display: flex;
+        width: 100%;
+    }
+    header {
+        margin-top: 30px;
+    }
+    .parent nav a {
+        /* flex-direction: column; */
+        height: 15%;
+        width: 10%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .facecon {
+        width: 100%;
+        margin: 6% auto;
+        align-items: baseline;
+        height:307px;
+    }
+    .headimg{
+        display: none;
+    }
+    .topCon {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .topCon div {
+        margin: 0 auto;
+    }
+    .topCon img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .middle-img {
+        width: 100%;
+        margin: .5% auto;
+    }
+    footer {
+        padding:0 3%;
+        width:95%
+        margin: 0 auto;
+        font-size:1.rem;
+    }
+    .lowercon{
+        margin: 0 auto;
+    }
+    address{
+        width:100%;
+        margin:3% auto;
+        line-height: 1.6;
+        font-size: 1.8rem;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 500px) {
+    .main-container{
+        width:100%
+    }
+    .parent {
+        height: 300px;
+    }
+    .parent nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .parent nav a {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .topCon,
+    .lowercon {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 3%;
+    }
+    #features,
+    #about,
+    #services,
+    #product,
+    #vision {
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+    }
+    .middle-img {
+        width: 100%;
+        margin: 4% auto;
+        height: 150px;
+    }
+    }
+    footer {
+        font-size: 1.2rem;
+    }
+    footer h5 {
+        margin-top: 5%;
+    }
+}
